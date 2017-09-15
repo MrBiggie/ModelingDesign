@@ -1,2 +1,0 @@
-# ModelingDesign
-PartB
