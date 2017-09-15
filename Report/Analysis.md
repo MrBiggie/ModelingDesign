@@ -35,7 +35,7 @@
     MailPool, working as an information expert, implements IMailPool interface which is also further extendible. Although there exists 2 classes in MailPool class, named PriorityComparer and NonPriorityComparer, these 2 classes are only used in MailPool which increase cohesion of _MailPool_.
 
     - _SimpleRobotBehaviour_, _SmartRobotBehaviour_, _IRobotBehaviour_
-    This 2 classes describes two different behaviours of robot implementing interface IRobotBehaviour which is further modifiable and it is good to create these behaviours in _Automail_ class.
+    This 2 classes and 1 interface describes two different behaviours of robot implementing interface IRobotBehaviour which is further modifiable and it is good to create these behaviours in _Automail_ class.
 
     - _MailItem_
     This class describes a new unit used in this program. _MailItem_ is widely use in nearly all other classes. _PriorityMailItem_ extends _MailItem_, with more features, such as priority level. It is worth noting that the variables in MailItem are protected, which should be changed to private to make MailItem encapsulated.
@@ -50,10 +50,22 @@
 
   - _ReportDelivery_ implementing _IMailDelivery_ is defined in _Simulation_ class, however, it is passed as parameters to create _Automail_ class, further used to create _Robot_ class, which increase coupling and reduce cohesion of _Simulation_ and _Automail_ class.
 
-  Because of the excessively large scale of the picture, the class details and association within design model are seperated.
+  - In _Simulation_ class, continuous object calling using "." will greatly increase coupling among classes, for example
+  ```
+    if (priority > 0) automail.robot.behaviour.priorityArrival(priority);
+  ```
 
-  The design model class details of given program are shown in Figure 1.
- <img src="Design_Class_Detail_Old.png" width = "800" height = "400" alt="Figure 1 Design Model Class Details" align=center />
+  Because of the excessively large size of the picture, the class details and association within design model are seperated.
 
-  The design model associations of given program are shown in Figure 2.
- <img src="Design_Class_Diagram.png" width = "1000" height = "600" alt="Figure 2 Design Model Class Details" align=center />
+  The design model class details of given program are shown below.
+ <div align ="center">
+ <img src="Design_Class_Detail_Old.png" width = "1100" height = "600" alt="Figure 1 Design Model Class Details" align=center />
+ </div>
+
+
+
+
+  The design model associations of given program are shown in below.
+ <div align ="center">
+ <img src="Design_Class_Diagram.png" width = "1100" height = "700" alt="Figure 2 Design Model Class Details" align=center />
+ </div>
