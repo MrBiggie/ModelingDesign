@@ -5,11 +5,7 @@
 <center> Hongyi Chen 822666</center>
 
 
-<<<<<<< HEAD
-- **Introduction**  
-=======
 - **Introduction**
->>>>>>> 8d5e7780f70c69730ed150b18f7c4655a2f2266e
  This program mainly provide an simulation of AutoMail bot system. However，the modeling of program, that is, association among classes have some shortcomings, as a result, the coupling among classes is high and cohesion within each class is low. We will focus on GRASP patterns to analyze the whole program starting from the reponsibility of each class, to association between classes.
 
 - **Responsibilities of each class**
