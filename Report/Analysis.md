@@ -50,4 +50,10 @@
 
   - _ReportDelivery_ implementing _IMailDelivery_ is defined in _Simulation_ class, however, it is passed as parameters to create _Automail_ class, further used to create _Robot_ class, which increase coupling and reduce cohesion of _Simulation_ and _Automail_ class.
 
-![Design Model Class Details] (Pictures/Design Class Detail Old.png)
+  Because of the excessively large scale of the picture, the class details and association within design model are seperated.
+
+  The design model class details of given program are shown in Figure 1.
+ <img src="Design_Class_Detail_Old.png" width = "800" height = "400" alt="Figure 1 Design Model Class Details" align=center />
+
+  The design model associations of given program are shown in Figure 2.
+ <img src="Design_Class_Diagram.png" width = "1000" height = "600" alt="Figure 2 Design Model Class Details" align=center />
