@@ -1,11 +1,14 @@
 ## <center>  Design Analysis Report </center>
 ######  <center> Project Group 16 </center>
 <center> Shuyuan Dang 840992 </center>
+
 <center> Feng Zhao 838219</center>
+
 <center> Hongyi Chen 822666</center>
 
 
-- **Introduction**
+
+- **Introduction**  
  This program mainly provide an simulation of AutoMail bot system. However，the modeling of program, that is, association among classes have some shortcomings, as a result, the coupling among classes is high and cohesion within each class is low. We will focus on GRASP patterns to analyze the whole program starting from the reponsibility of each class, to association between classes.
 
 - **Responsibilities of each class**
